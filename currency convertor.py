@@ -29,8 +29,7 @@ def RealTimeCurrencyConversion():
     else:
         new_amt= c.convert(from_cur,to_cur,float(Amount1_field.get()))
         Amount2_field.insert(0,str(new_amt))
-        
-        
+         
 def clear_all():
     Amount1_field.delete(0,tk.END)
     Amount2_field.delete(0,tk.END)
